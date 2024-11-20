@@ -11,7 +11,7 @@ my_channel_id = int(os.getenv('CHANNEL_ID'))
 topic_id = int(os.getenv('TOPIK_ID'))
 client = TelegramClient('swgohbot', api_id, api_hash)
 print("Bot - started")
-channels = ["@rus_swgoh"]
+channels = ["@rus_swgoh", '@tetetetsadgf']
 
 
 @client.on(events.NewMessage(chats=channels))

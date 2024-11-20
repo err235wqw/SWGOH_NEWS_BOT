@@ -1,0 +1,15 @@
+[Unit]
+Description=News bot
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/news_bot/SWGOH_NEWS_BOT
+ExecStart=/home/news_bot/SWGOH_NEWS_BOT/.venv/bin/python3 /home/news_bot/SWGOH_NEWS_BOT/run.py
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
